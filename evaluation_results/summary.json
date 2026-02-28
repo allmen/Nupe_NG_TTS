@@ -1,0 +1,14 @@
+{
+  "num_samples": 5,
+  "mcd_mean": 4.769967518258696,
+  "mcd_std": 0.014928848384415862,
+  "rmse_mean": 0.12279187142848969,
+  "rmse_std": 0.0009167371899820864,
+  "dtw_mean": 0.7475009168758673,
+  "dtw_std": 0.005779450656403885,
+  "duration_ratio_mean": 2.0,
+  "duration_ratio_std": 0.0,
+  "spectral_convergence_mean": 1.0578850507736206,
+  "log_spectral_distance_mean": 3.8832314014434814,
+  "attention_score_mean": 0.011240393311258345
+}

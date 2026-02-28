@@ -1,0 +1,55 @@
+# Virtual environments
+tts_ajao/
+.venv/
+venv/
+env/
+.env
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+
+# Logs
+logs/
+*.log
+
+# IDE
+.vscode/
+.idea/
+
+# Temporary files
+temp_plots/
+*.tmp
+
+# Model checkpoints (large files - keep only best_model.pth)
+models/checkpoints/
+!models/best_model.pth
+
+# Jupyter
+.ipynb_checkpoints/
+notebooks/.ipynb_checkpoints/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+# Node
+node_modules/
+package-lock.json
+
+# Archives
+*.rar
+*.zip
+
+# Generated audio/images for testing
+output.wav
+output_attention.png
+output_mel.png
+tswako_test.wav
+tswako_test_attention.png
+tswako_test_mel.png
+
+# PDF
+*.pdf

@@ -1,0 +1,63 @@
+# ==========================
+# AUDIO PARAMETERS
+# ==========================
+audio:
+  sample_rate: 22050
+  n_fft: 1024
+  hop_length: 256
+  win_length: 1024
+  n_mels: 80
+  fmin: 0
+  fmax: 8000
+  preemphasis: 0.97
+  max_db: 100
+  ref_db: 20
+  top_db: 15
+
+# ==========================
+# TEXT PROCESSING
+# ==========================
+text:
+  language: "nupe"
+  cleaners: ["basic_cleaners"]
+  use_phonemes: true
+  add_start_end_tokens: true
+  vocab_size: 150            # Must be >= text_processor actual vocab size (~107)
+
+# ==========================
+# MODEL PARAMETERS
+# ==========================
+model:
+  embedding_dim: 256
+  encoder_hidden_dim: 256
+  encoder_num_layers: 2
+  decoder_hidden_dim: 256
+  prenet_dim: 128
+  attention_dim: 32
+  dropout: 0.2
+  teacher_forcing_ratio: 1.0
+
+# ==========================
+# TRAINING PARAMETERS
+# ==========================
+training:
+  batch_size: 1               # Reduced to 1 to fit in 4GB T1000 VRAM
+  epochs: 30
+  learning_rate: 0.001
+  weight_decay: 1e-6
+  grad_clip: 1.0
+  save_interval: 10
+  validation_interval: 5
+  early_stopping_patience: 5
+  checkpoint_dir: "./models/checkpoints"
+
+# ==========================
+# DATA PARAMETERS
+# ==========================
+data:
+  train_split: 0.8
+  val_split: 0.1
+  test_split: 0.1
+  max_text_length: 100        # Truncate long text sequences
+  max_audio_length: 150       # Truncate long mel sequences to prevent OOM on 4GB GPU
+  normalize_audio: true
