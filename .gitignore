@@ -23,6 +23,9 @@ logs/
 temp_plots/
 *.tmp
 
+# Data folder (large files)
+data/
+
 # Model checkpoints (large files - keep only best_model.pth)
 models/checkpoints/
 !models/best_model.pth

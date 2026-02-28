@@ -1,6 +1,0 @@
-speaker_id,text,text_path,audio_path,gender,age
-speaker_002,tswako tswa mi na,data/raw\speaker_002\audio_0.txt,data/raw\speaker_002\audio_0.wav,Unknown,Unknown
-speaker_002,efi na eya na ewo,data/raw\speaker_002\audio_1.txt,data/raw\speaker_002\audio_1.wav,Unknown,Unknown
-speaker_002,gbani gbani nupe gbani,data/raw\speaker_002\audio_2.txt,data/raw\speaker_002\audio_2.wav,Unknown,Unknown
-speaker_002,eba na ewo na eshe,data/raw\speaker_002\audio_3.txt,data/raw\speaker_002\audio_3.wav,Unknown,Unknown
-speaker_002,tswa mi na nupe kogi,data/raw\speaker_002\audio_4.txt,data/raw\speaker_002\audio_4.wav,Unknown,Unknown
